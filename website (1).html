@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Free Book Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #4A90E2;
+    }
+
+    .navbar nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .navbar nav a:hover {
+      color: #4A90E2;
+    }
+
+    .navbar .contact-btn {
+      background-color: #4A90E2;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      background-color: #4A90E2;
+      padding: 12px 25px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* BOOKS SECTION */
+    .books {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .book-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .book-card:hover {
+      transform: scale(1.05);
+    }
+
+    .book-card h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .book-card p {
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .book-card a {
+      background-color: #4A90E2;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .book-card a:hover {
+      background-color: #357ABD;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #222;
+      color: #ccc;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+      margin: 10px;
+    }
+
+    .footer-column h3 {
+      color: #4A90E2;
+      margin-bottom: 15px;
+    }
+
+    .footer-column p,
+    .footer-column a {
+      font-size: 0.95rem;
+      color: #bbb;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .footer-column a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #444;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">📘 BookLibrary</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <a href="#" class="contact-btn">Contact</a>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Welcome to Your Free Book Library</h1>
+    <p>Thousands of amazing stories just a click away!</p>
+    <a href="#">📖 Read More</a>
+  </section>
+
+  <!-- BOOKS SECTION -->
+  <section class="books">
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1407119187i/22852474.jpg" alt="The Great Gatsby" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px;">
+      <h2>Lover To Strangers</h2>
+      <p>by Lisa Mckay</p>
+      <a href="books/gatsby.pdf" download>📥 Download</a>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1530823449i/40727470.jpg"lt="1984" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px;">
+      <h2>Jack The Ripper</h2>
+      <p>by Mark Davis</p>
+      <a href="books/1984.pdf" download>📥 Download</a>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1469509467i/29236380.jpg" alt="Frankenstein" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px;">
+      <h2>Girl In Pieces</h2>
+      <p>By Kathleen Glasgow</p>
+      <a href="books/frankenstein.pdf" download>📥 Download</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <!-- Column 1 -->
+      <div class="footer-column">
+        <h3>📘 BookLibrary</h3>
+        <p>Explore a wide range of free storybooks. Download and enjoy timeless tales from classic authors.</p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-column">
+        <h3>Navigation</h3>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <a href="#">🌐 Facebook</a>
+        <a href="#">📷 Instagram</a>
+        <a href="#">🐦 Twitter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 BookLibrary. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
